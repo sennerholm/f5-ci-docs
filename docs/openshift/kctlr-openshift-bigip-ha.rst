@@ -159,13 +159,13 @@ Create a VXLAN tunnel
 
 .. parsed-literal::
 
-   create /net tunnels tunnel **openshift_vxlan** key **0** profile **ose-vxlan** local-address **172.16.1.30** secondary-address **172.16.1.28** traffic-group **traffic-group-1**
+   create /net tunnels tunnel **openshift_vxlan** key **0** profile **ose-vxlan** local-address **172.16.1.30** secondary-address **172.16.1.28** traffic-group **traffic-group-1** remote-address **any**
 
 .. rubric:: BIG-IP Node 02
 
 .. parsed-literal::
 
-   create /net tunnels tunnel **openshift_vxlan** key **0** profile **ose-vxlan** local-address **172.16.1.30** secondary-address **172.16.1.29** traffic-group **traffic-group-1**
+   create /net tunnels tunnel **openshift_vxlan** key **0** profile **ose-vxlan** local-address **172.16.1.30** secondary-address **172.16.1.29** traffic-group **traffic-group-1** remote-address **any**
 
 .. _openshift vxlan selfIP ha:
 
